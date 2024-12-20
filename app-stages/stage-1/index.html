@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Rock And Roll Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+</head>
+<body>
+   <h1>Rock, Paper, Scissors - The Classic Game!</h1>
+
+    <!-- Instructions -->
+    <div class="instructions">
+      <p>Good luck, and have fun!</p>
+    </div>
+
+    <!-- Main Game Container -->
+    <div class="main-container">
+      <div class="game-container">
+        <div class="choices">
+          <button class="choice" data-choice="rock" aria-label="Choose Rock">
+            Rock
+          </button>
+          <button class="choice" data-choice="paper" aria-label="Choose Paper">
+            Paper
+          </button>
+          <button
+            class="choice"
+            data-choice="scissors"
+            aria-label="Choose Scissors"
+          >
+            Scissors
+          </button>
+        </div>
+
+        <div id="player-choice" class="choice-display"></div>
+        <div id="computer-choice" class="choice-display"></div>
+        <div id="result" class="result-box"></div>
+
+        <!-- Centered Buttons -->
+        <div class="button-container">
+          <button id="next-round" class="hidden">Next Round</button>
+          <button id="play-again" class="hidden">Play Again</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

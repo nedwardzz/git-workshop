@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Rock And Roll Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+</head>
+<body>
+   <h1>Rock, Paper, Scissors - The Classic Game!</h1>
+
+    <!-- Instructions -->
+    <div class="instructions">
+      <p>Welcome to the Rock, Paper, Scissors game! Here are the rules:</p>
+      <ul>
+        <li>You will play against the computer in a total of 5 rounds.</li>
+        <li>Select Rock, Paper, or Scissors by clicking one of the buttons.</li>
+        <li>
+          The winner of each round will be displayed, and scores will be updated
+          accordingly.
+        </li>
+        <li>After each round, click "Next Round" to continue playing.</li>
+        <li>At the end of 5 rounds, the overall winner will be announced.</li>
+        <li>
+          If you want to play again, click "Play Again" to start a new game.
+        </li>
+      </ul>
+      <p>Good luck, and have fun!</p>
+    </div>
+
+    <!-- Main Game Container -->
+    <div class="main-container">
+      <div class="game-container">
+        <div class="choices">
+          <button class="choice" data-choice="rock" aria-label="Choose Rock">
+            Rock
+          </button>
+          <button class="choice" data-choice="paper" aria-label="Choose Paper">
+            Paper
+          </button>
+          <button
+            class="choice"
+            data-choice="scissors"
+            aria-label="Choose Scissors"
+          >
+            Scissors
+          </button>
+        </div>
+
+        <div id="player-choice" class="choice-display"></div>
+        <div id="computer-choice" class="choice-display"></div>
+        <div id="result" class="result-box"></div>
+
+        <!-- Centered Buttons -->
+        <div class="button-container">
+          <button id="next-round" class="hidden">Next Round</button>
+          <button id="play-again" class="hidden">Play Again</button>
+        </div>
+      </div>
+
+      <!-- Stats Container -->
+      <div class="stats-container">
+        <!-- Current Round Info Section -->
+        <div class="current-round-info">
+          <h2>Current Round Stats</h2>
+          <div id="round-info" class="score-box">Round: 1</div>
+          <div id="rounds-remaining" class="score-box">Rounds Remaining: 5</div>
+          <div id="player-score" class="score-box">Player Score: 0</div>
+          <div id="computer-score" class="score-box">Computer Score: 0</div>
+        </div>
+
+        <!-- Overall Stats Section -->
+        <div class="overall-stats">
+          <h2>Overall Stats</h2>
+          <div id="player-overall-wins" class="score-box">Player Wins: 0</div>
+          <div id="computer-overall-wins" class="score-box">
+            Computer Wins: 0
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
