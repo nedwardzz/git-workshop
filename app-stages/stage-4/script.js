@@ -126,15 +126,21 @@ class RockPaperScissorsGame {
         if (this.playerScore > this.computerScore) {
             resultMessage = `Game over! You win with a score of ${this.playerScore} to ${this.computerScore}.`;
             this.playerWins++;
+
+            // Uncomment the 2 lines below for Feature 1 - Commit 3
             document.body.classList.add("win-background");
             resultColor = "#155724";
         } else if (this.computerScore > this.playerScore) {
             resultMessage = `Game over! The computer wins with a score of ${this.computerScore} to ${this.playerScore}.`;
             this.computerWins++;
+
+            // Uncomment the 2 lines below for Feature 1 - Commit 3
             document.body.classList.add("loss-background");
             resultColor = "#721c24";
         } else {
             resultMessage = `Game over! It's a tie with a score of ${this.playerScore} to ${this.computerScore}.`;
+
+            // Uncomment the 2 lines below for Feature 1 - Commit 3
             document.body.classList.add("draw-background");
             resultColor = "#856404";
         }
