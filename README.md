@@ -12,8 +12,6 @@ Welcome back! In this session, we’ll explore how different Git operations—**
    - [Merging](#merging)
    - [Squashing](#squashing)
    - [Cherry-Picking](#cherry-picking)
-5. [Glossary](#glossary)
-6. [Common Issues and Troubleshooting](#common-issues-and-troubleshooting)
 
 ## What You’ll Need
 
