@@ -287,4 +287,4 @@ When working in a team, cherry-picking should be used with caution. If other dev
 
 ---
 
-**END OF FILE**
+__END OF FILE__
