@@ -198,6 +198,15 @@ Squashing condenses multiple commits into a single commit. It's useful for combi
 
 Example Use Case: You have multiple work-in-progress commits on a `feature-branch`, and you want to merge them into `main` as a single commit.
 
+###### Note
+
+The first method shown is much cleaner in my opinion for 2 main reasons:
+
+1. It keeps the commit history of branch being squashed intact
+   - The 2<sup>nd</sup> method "condenses" the branch being squashed (mostly irreversible - requires more work to remediate)
+2. It avoids the need to use an interactive rebase which makes use of command line text editors
+   - These tools tend to be confusing to some, especially if you're just getting started
+
 ```bash
 // Make sure you start in git-playground
 cp -r start squash-ex-one
